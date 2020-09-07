@@ -1,89 +1,38 @@
-# pages-boilerplate
+# lg-pages-boilerplate
 
-[![Build Status][travis-image]][travis-url]
 [![Package Version][version-image]][version-url]
 [![License][license-image]][license-url]
-[![Dependency Status][dependency-image]][dependency-url]
-[![devDependency Status][devdependency-image]][devdependency-url]
-[![Code Style][style-image]][style-url]
 
-> Always a pleasure scaffolding your awesome static sites.
+**LAGOU EDU, PART 2, MODULE 1, ASSIGNMENT**
 
-## Getting Started
+本项目使用前端工程化构建工具 `gulp` 以及相关构建插件完成。它可以方便地创建一个静态网站。操作如下：
+
+## 克隆到本地并安装依赖
 
 ```shell
 # clone repo
-$ git clone https://github.com/zce/pages-boilerplate.git my-awesome-pages
-$ cd my-awesome-pages
+$ git clone https://github.com/LD8/lg-pages.git my-pages
+
+$ cd my-pages
+
 # install dependencies
 $ yarn # or npm install
 ```
 
-## Usage
+## 使用构建命令
 
 ```shell
-$ yarn <task> [options]
-```
+# Cleans `temp` and `dist` folders
+$ yarn dev
 
-### e.g.
-
-```shell
 # Runs the app in development mode
-$ yarn serve --port 5210 --open
+$ yarn dev
+
 # Builds the app for production to the `dist` folder
-$ yarn build --production
+$ yarn build
 ```
 
-### Available Scripts
-
-#### `yarn lint` or `npm run lint`
-
-Lint the styles & scripts files.
-
-#### `yarn compile` or `npm run compile`
-
-Compile the styles & scripts & pages file.
-
-#### `yarn serve` or `npm run serve`
-
-Runs the app in development mode with a automated server.
-
-##### options
-
-- `open`: Open browser on start, Default: `false`
-- `port`: Specify server port, Default: `2080`
-
-#### `yarn build` or `npm run build`
-
-Builds the app for production to the `dist` folder. It minify source in production mode for the best performance.
-
-##### options
-
-- `production`: Production mode flag, Default: `false`
-- `prod`: Alias to `production`
-
-#### `yarn start` or `npm run start`
-
-Running projects in production mode.
-
-##### options
-
-- `open`: Open browser on start, Default: `false`
-- `port`: Specify server port, Default: `2080`
-
-#### `yarn deploy` or `npm run deploy`
-
-Deploy the `dist` folder to [GitHub Pages](https://pages.github.com).
-
-##### options
-
-- `branch`: The name of the branch you'll be pushing to, Default: `'gh-pages'`
-
-#### `yarn clean` or `npm run clean`
-
-Clean the `dist` & `temp` files.
-
-## Folder Structure
+## 文件夹结构
 
 ```
 └── my-awesome-pages ································· project root
@@ -118,11 +67,7 @@ Clean the `dist` & `temp` files.
    └─ yarn.lock ······································ yarn lock file
 ```
 
-## Related
-
-- [zce/x-pages](https://github.com/zce/x-pages) - A fully managed gulp workflow for static page sites.
-
-## Contributing
+## 贡献
 
 1. **Fork** it on GitHub!
 2. **Clone** the fork to your own machine.
@@ -132,11 +77,6 @@ Clean the `dist` & `temp` files.
 6. Submit a **Pull Request** so that we can review your changes.
 
 > **NOTE**: Be sure to merge the latest from "upstream" before making a pull request!
-
-## License
-
-[MIT](LICENSE) &copy; [汪磊](https://zce.me)
-
 
 
 [travis-image]: https://img.shields.io/travis/zce/pages-boilerplate/master.svg

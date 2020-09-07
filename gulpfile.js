@@ -68,7 +68,7 @@ const minTemp = () => {
 const minImages = () => {
   return (
     src("src/assets/images/**", { base: "src" })
-      // .pipe(pl.imagemin())
+      .pipe(pl.imagemin())
       .pipe(dest("dist"))
   );
 };
@@ -76,7 +76,7 @@ const minImages = () => {
 const minFonts = () => {
   return (
     src("src/assets/fonts/**", { base: "src" })
-      // .pipe(pl.imagemin())
+      .pipe(pl.imagemin())
       .pipe(dest("dist"))
   );
 };
