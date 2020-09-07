@@ -41,7 +41,7 @@ const serve = () => {
       notify: false,
       baseDir: ["temp", "src", "public"],
       routes: {
-        "/nodes_modules": "node_modules",
+        "/node_modules": "node_modules",
       },
     },
   });
